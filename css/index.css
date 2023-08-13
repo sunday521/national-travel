@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url(../images/f1_1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.cloud img {
+    position: absolute;
+    left: 50%;
+}
+
+.cloud img:nth-child(1) {
+    top: 20px;
+    margin-left: -260px;
+    animation: piao 3s linear infinite alternate;
+}
+.cloud img:nth-child(2) {
+    top: 100px;
+    margin-left: 380px;
+    animation: piao 2.5s linear infinite alternate;
+}
+.cloud img:nth-child(3) {
+    top: 200px;
+    margin-left: -560px;
+    animation: piao 3s linear infinite alternate;
+}
+
+@keyframes piao {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(40px);
+    }
+}
+
+.qiqiu img {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -390px;
+    animation: piaoY 1.5s linear infinite alternate;
+}
+
+@keyframes piaoY {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+.location img {
+    position: absolute;
+    bottom: 42px;
+    left: 50%;
+    width: 100px;
+}
+
+.location img:nth-child(1) {
+    margin-left: -390px;
+    animation: piaoY .8s linear infinite alternate;
+}
+
+.location img:nth-child(2) {
+    margin-left: -180px;
+    animation: piaoY .8s .2s linear infinite alternate;
+}
+
+.location img:nth-child(3) {
+    margin-left: 35px;
+    animation: piaoY .8s .4s linear infinite alternate;
+}
+
+.location img:nth-child(4) {
+    margin-left: 240px;
+    animation: piaoY .8s .6s linear infinite alternate;
+}
+
+.txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: text 1s ease forwards;
+}
+
+@keyframes text {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    20% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    40% {
+        transform: translate(-50%, -50%) scale(1.4);
+    }
+
+    70% {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+
+.lu img {
+    position: absolute;
+    left: 50%;
+    margin-left: 65px;
+    top: 20%;
+    transform-origin: left bottom;
+    animation: rotate 2s 1s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    35% {
+        transform: rotate(45deg);
+    }
+    70% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
